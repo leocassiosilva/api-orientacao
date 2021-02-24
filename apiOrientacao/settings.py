@@ -29,7 +29,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -42,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'rest_framework',
 ]
+
+AUTH_USER_MODEL = "accounts.CustomUsuario"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
